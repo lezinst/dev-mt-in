@@ -1,0 +1,168 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'http-server',
+1 verbose cli   '-g' ]
+2 info using npm@2.14.12
+3 info using node@v4.3.1
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'http-server', null ]
+7 verbose cache add spec http-server
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'http-server',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'http-server',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed http-server@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for http-server
+11 info addNameTag [ 'http-server', 'latest' ]
+12 silly mapToRegistry name http-server
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/http-server
+16 verbose addNameTag registry:https://registry.npmjs.org/http-server not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/http-server
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 8:41:51 PM
+20 verbose request id 38f4fc02fe39ae9a
+21 verbose etag "ERYHUN2TO7O9MKIL1GZ9AT6YL"
+22 http request GET https://registry.npmjs.org/http-server
+23 http 304 https://registry.npmjs.org/http-server
+24 verbose headers { date: 'Wed, 17 Feb 2016 03:41:51 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   etag: '"ERYHUN2TO7O9MKIL1GZ9AT6YL"',
+24 verbose headers   age: '140',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-lax1433-LAX',
+24 verbose headers   'x-cache': 'HIT',
+24 verbose headers   'x-cache-hits': '1',
+24 verbose headers   'x-timer': 'S1455680511.753544,VS0,VE1',
+24 verbose headers   vary: 'Accept' }
+25 silly get cb [ 304,
+25 silly get   { date: 'Wed, 17 Feb 2016 03:41:51 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     etag: '"ERYHUN2TO7O9MKIL1GZ9AT6YL"',
+25 silly get     age: '140',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-lax1433-LAX',
+25 silly get     'x-cache': 'HIT',
+25 silly get     'x-cache-hits': '1',
+25 silly get     'x-timer': 'S1455680511.753544,VS0,VE1',
+25 silly get     vary: 'Accept' } ]
+26 verbose etag https://registry.npmjs.org/http-server from cache
+27 verbose get saving http-server to /Users/robstlezin/.npm/registry.npmjs.org/http-server/.cache.json
+28 silly addNameTag next cb for http-server with tag latest
+29 silly addNamed http-server@0.8.5
+30 verbose addNamed "0.8.5" is a plain semver version for http-server
+31 silly cache afterAdd http-server@0.8.5
+32 verbose afterAdd /Users/robstlezin/.npm/http-server/0.8.5/package/package.json not in flight; writing
+33 verbose afterAdd /Users/robstlezin/.npm/http-server/0.8.5/package/package.json written
+34 silly install resolved [ { name: 'http-server',
+34 silly install resolved     version: '0.8.5',
+34 silly install resolved     description: 'A simple zero-configuration command-line http server',
+34 silly install resolved     main: './lib/http-server',
+34 silly install resolved     repository:
+34 silly install resolved      { type: 'git',
+34 silly install resolved        url: 'git://github.com/indexzero/http-server.git' },
+34 silly install resolved     keywords: [ 'cli', 'command' ],
+34 silly install resolved     scripts:
+34 silly install resolved      { start: 'node ./bin/http-server',
+34 silly install resolved        pretest: 'common bin/http-server lib/ test',
+34 silly install resolved        test: 'vows --spec --isolate' },
+34 silly install resolved     contributors:
+34 silly install resolved      [ [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object] ],
+34 silly install resolved     dependencies:
+34 silly install resolved      { colors: '1.0.3',
+34 silly install resolved        optimist: '0.6.x',
+34 silly install resolved        union: '~0.4.3',
+34 silly install resolved        ecstatic: '~0.7.0',
+34 silly install resolved        'http-proxy': '^1.8.1',
+34 silly install resolved        portfinder: '0.4.x',
+34 silly install resolved        opener: '~1.4.0',
+34 silly install resolved        corser: '~2.0.0' },
+34 silly install resolved     devDependencies: { 'common-style': '^3.0.0', request: '2.49.x', vows: '0.7.x' },
+34 silly install resolved     bugs: { url: 'https://github.com/nodeapps/http-server/issues' },
+34 silly install resolved     license: 'MIT',
+34 silly install resolved     preferGlobal: 'true',
+34 silly install resolved     bin: { 'http-server': './bin/http-server', hs: './bin/http-server' },
+34 silly install resolved     gitHead: 'b8975be281a5705e71218597940e53034ebe41d4',
+34 silly install resolved     homepage: 'https://github.com/indexzero/http-server#readme',
+34 silly install resolved     _id: 'http-server@0.8.5',
+34 silly install resolved     _shasum: 'bbf27c9f09499e51a1fe1f979a6f39a45a04f2fb',
+34 silly install resolved     _from: 'http-server@latest',
+34 silly install resolved     _npmVersion: '2.14.5',
+34 silly install resolved     _nodeVersion: '0.12.7',
+34 silly install resolved     _npmUser: { name: 'indexzero', email: 'charlie.robbins@gmail.com' },
+34 silly install resolved     maintainers: [ [Object] ],
+34 silly install resolved     dist:
+34 silly install resolved      { shasum: 'bbf27c9f09499e51a1fe1f979a6f39a45a04f2fb',
+34 silly install resolved        tarball: 'http://registry.npmjs.org/http-server/-/http-server-0.8.5.tgz' },
+34 silly install resolved     directories: {},
+34 silly install resolved     _resolved: 'https://registry.npmjs.org/http-server/-/http-server-0.8.5.tgz',
+34 silly install resolved     readme: 'ERROR: No README data found!' } ]
+35 info install http-server@0.8.5 into /usr/local/lib
+36 info installOne http-server@0.8.5
+37 verbose installOne of http-server to /usr/local/lib not in flight; installing
+38 verbose lock using /Users/robstlezin/.npm/_locks/http-server-ae30c9ae1f4c5eaa.lock for /usr/local/lib/node_modules/http-server
+39 silly install write writing http-server 0.8.5 to /usr/local/lib/node_modules/http-server
+40 verbose unbuild lib/node_modules/http-server
+41 silly gentlyRm /usr/local/lib/node_modules/http-server is being purged from base /usr/local
+42 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/http-server
+43 verbose tar unpack /Users/robstlezin/.npm/http-server/0.8.5/package.tgz
+44 verbose tar unpacking to /usr/local/lib/node_modules/http-server
+45 silly gentlyRm /usr/local/lib/node_modules/http-server is being purged
+46 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/http-server
+47 silly gunzTarPerm modes [ '755', '644' ]
+48 error tar.unpack untar error /Users/robstlezin/.npm/http-server/0.8.5/package.tgz
+49 verbose unlock done using /Users/robstlezin/.npm/_locks/http-server-ae30c9ae1f4c5eaa.lock for /usr/local/lib/node_modules/http-server
+50 verbose fstream_path /usr/local/lib/node_modules/http-server
+51 verbose fstream_type Directory
+52 verbose fstream_class DirWriter
+53 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/http-server'
+53 verbose stack     at Error (native)
+54 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+54 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+54 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+55 verbose cwd /Users/robstlezin/Desktop/hello-world/myrepository/angular/weeklong/dev-mt-in
+56 error Darwin 15.2.0
+57 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "http-server" "-g"
+58 error node v4.3.1
+59 error npm  v2.14.12
+60 error path /usr/local/lib/node_modules/http-server
+61 error code EACCES
+62 error errno -13
+63 error syscall mkdir
+64 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/http-server'
+64 error     at Error (native)
+64 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/http-server']
+64 error   errno: -13,
+64 error   code: 'EACCES',
+64 error   syscall: 'mkdir',
+64 error   path: '/usr/local/lib/node_modules/http-server',
+64 error   fstream_type: 'Directory',
+64 error   fstream_path: '/usr/local/lib/node_modules/http-server',
+64 error   fstream_class: 'DirWriter',
+64 error   fstream_stack:
+64 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+64 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+64 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+65 error Please try running this command again as root/Administrator.
+66 verbose exit [ -13, true ]
+67 verbose unbuild lib/node_modules/http-server
+68 silly gentlyRm /usr/local/lib/node_modules/http-server is being purged from base /usr/local
+69 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/http-server
